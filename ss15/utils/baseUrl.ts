@@ -23,7 +23,7 @@ baseUrl.interceptors.response.use(async (response) => {
     if (response.statusCode === 401) {
         try {
             const response = await baseUrl.post("/auths/refresh-token", {
-                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjc4LCJpYXQiOjE3NjAzMzE1NDQsImV4cCI6MTc2MDkzNjM0NH0.37Zj36QRR4LHRlB56vJzxf-E0mCV6wIJjAAqiDmoDpk"
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjExOCwiaWF0IjoxNzYwMzc2MTY0LCJleHAiOjE3NjA5ODA5NjR9.0Re4mCk04R8Z_NxoHRYDwWCMK27ag7kUfbiP7zIgEKg"
             });
             if (response) {
                 const newAccessToken = response.data.accessToken;
