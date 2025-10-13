@@ -44,6 +44,24 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="product-detail"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="add-product"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="edit-product"
+        options={{
+          href: null,
+        }}
+      />
     </Tabs>
   );
 }

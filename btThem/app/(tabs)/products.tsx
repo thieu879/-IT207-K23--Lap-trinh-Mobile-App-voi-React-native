@@ -1,6 +1,7 @@
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
+import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import React, { useEffect, useState } from "react";
@@ -55,7 +56,7 @@ export default function ProductsScreen() {
 
   const handleProductPress = (product: Product) => {
     router.push({
-      pathname: "/product-detail",
+      pathname: "/(tabs)/product-detail",
       params: {
         id: product.id,
         name: product.name,
@@ -114,13 +115,13 @@ export default function ProductsScreen() {
           style={styles.actionButton}
           onPress={() => handleEditProduct(item)}
         >
-          <IconSymbol name="pencil" size={20} color="#007AFF" />
+          <Ionicons name="pencil" size={20} color="#007AFF" />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.actionButton}
           onPress={() => handleDeleteProduct(item)}
         >
-          <IconSymbol name="trash" size={20} color="#FF3B30" />
+          <Ionicons name="trash" size={20} color="#FF3B30" />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>
