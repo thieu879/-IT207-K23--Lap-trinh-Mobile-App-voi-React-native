@@ -29,3 +29,4 @@ export const updatePosition = async (id: number, position: UpdatePosition): Prom
 export const deletePosition = async (id: number): Promise<void> => {
   await axiosInstance.delete(`/positions/${id}`);
 };
+
