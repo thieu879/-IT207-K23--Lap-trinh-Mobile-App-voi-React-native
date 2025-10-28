@@ -46,3 +46,4 @@ const styles = StyleSheet.create({
   name: { fontSize: 16, fontWeight: "600", marginBottom: 4 },
   price: { fontSize: 14, color: "#1e88e5", fontWeight: "600" },
 });
+

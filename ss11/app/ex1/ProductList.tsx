@@ -35,3 +35,4 @@ const styles = StyleSheet.create({
   },
   title: { fontSize: 20, fontWeight: "700", marginTop: 8, marginBottom: 8 },
 });
+
